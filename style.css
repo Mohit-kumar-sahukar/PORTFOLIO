@@ -1,0 +1,239 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #000428, #004e92);
+    color: white;
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 5px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex; /* Enable flexbox for the nav */
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Vertically align items */
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: cyan;
+}
+
+/* Portfolio Header */
+#portfolio-header {
+    margin-left: 20px; /* Add some left margin */
+    font-weight: bold; /* Make it bold */
+    font-size: 1.2em; /* Adjust the size as needed */
+    color: white; /* Or your preferred color */
+    /* Add any other styling you want for the portfolio header */
+}
+
+/* Logo Styling */
+#logo {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    width: 80px; /* Adjust size */
+    height: auto;
+    z-index: 1000; /* Ensures it stays on top */
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Sections */
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    text-align: left; /* Align text to the left */
+    position: absolute; /* Position it relative to the section */
+    top: 280px; /* Adjust vertical placement */
+    left: 10%; /* Set distance from the left edge */
+    width: auto; /* Adjust the width dynamically */
+}
+
+/* Headings Styling */
+.container h1 {
+    font-size: 4rem; /* Font size for the headings */
+    margin: 5px 0;
+}
+
+.container p {
+    font-size: 1.2rem; /* Adjust the size of the description */
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.highlight {
+    color: cyan;
+}
+
+/* Profile Picture */
+#profile-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#profile-pic {
+    position: absolute;
+    top: 160px; /* Adjust this value to move it further down */
+    left: 75%;
+    transform: translateX(-50%);
+    width: 450px;
+    height: 450px;
+    border-radius: 80%;
+    border: 2px solid rgb(43, 228, 249);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    padding: 80px;
+}
+
+/* About Profile Background */
+#aboutprofile {
+    background-image: url('1.JPG'); /* Set background image */
+    background-size: cover; /* Cover full section */
+    background-position: center; /* Center image */
+    background-repeat: no-repeat; /* Prevent repetition */
+    width: 99%;
+    height: 150px; /* Adjust to LinkedIn background size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 2s ease-in-out; /* Smooth animation */
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hide Original Image */
+#About_pic {
+    display: none;
+}
+
+/* Project Cards */
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 60%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Skills Animation */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+@keyframes skillFadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background: cyan;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #004e92;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background: black;
+    margin-top: 50px;
+}
